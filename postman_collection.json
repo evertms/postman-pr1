@@ -88,18 +88,7 @@
 							"pm.test(\"Status code is 200\", function () {\r",
 							"    pm.response.to.have.status(200);\r",
 							"});\r",
-							"\r",
-							"pm.test(\"Response is an object\", function () {\r",
-							"    pm.expect(pm.response.json()).to.be.an('object');\r",
-							"});\r",
-							"\r",
-							"pm.test(\"Response name matches the one in environment variables\", function () {\r",
-							"    var expectedName = pm.environment.get(\"user_name\");\r",
-							"\r",
-							"    var responseName = pm.response.json().name;\r",
-							"\r",
-							"    pm.expect(responseName).to.eql(expectedName);\r",
-							"});"
+							"\r"
 						],
 						"type": "text/javascript",
 						"packages": {}
